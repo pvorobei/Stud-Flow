@@ -1,6 +1,6 @@
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git config --global user.name "Monty"
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git config --global user.email "p.vorobei2013@gmail.com"
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git init
+git config --global user.name "Monty"
+git config --global user.email "p.vorobei2013@gmail.com"
+git init
 подсказка: Using 'master' as the name for the initial branch. This default branch name
 подсказка: is subject to change. To configure the initial branch name to use in all
 подсказка: of your new repositories, which will suppress this warning, call:
@@ -11,18 +11,12 @@ tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git init
 подсказка: 'development'. The just-created branch can be renamed via this command:
 подсказка:
 подсказка:      git branch -m <name>
-Инициализирован пустой репозиторий Git в /home/tymon/project/TASK_Stud_Flow/.git/
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git add.
-git: «add.» не является командой git. Смотрите «git --help».
+Инициализирован пустой репозиторий Git в ..project/TASK_Stud_Flow/.git/
 
-Самые похожие команды:
-        add
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git add .
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git status
+git add .
+git status
 Текущая ветка: master
-
 Еще нет коммитов
-
 Изменения, которые будут включены в коммит:
   (используйте «git rm --cached <файл>...», чтобы убрать из индекса)
         новый файл:    .vscode/launch.json
@@ -39,7 +33,7 @@ tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git status
         новый файл:    person.cpp
         новый файл:    person.h
 
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git commit -m "first commit"
+git commit -m "first commit"
 [master (корневой коммит) 2bb4792] first commit
  13 files changed, 776 insertions(+)
  create mode 100644 .vscode/launch.json
@@ -55,120 +49,75 @@ tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git commit -m "first commit"
  create mode 100644 main.h
  create mode 100644 person.cpp
  create mode 100644 person.h
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git remote add origin https://github.com/pvorobei/Stud-Flow.git
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git remote -v
+
+git remote add origin https://github.com/pvorobei/Stud-Flow.git
+git remote -v
 origin  https://github.com/pvorobei/Stud-Flow.git (fetch)
 origin  https://github.com/pvorobei/Stud-Flow.git (push)
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git push origin master
-Перечисление объектов: 16, готово.
-Подсчет объектов: 100% (16/16), готово.
-При сжатии изменений используется до 4 потоков
-Сжатие объектов: 100% (16/16), готово.
-Запись объектов: 100% (16/16), 60.33 КиБ | 5.48 МиБ/с, готово.
-Всего 16 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+
+git push origin master
 To https://github.com/pvorobei/Stud-Flow.git
  * [new branch]      master -> master
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ touch .gitignore
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git add .gitignore
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git commit -m 'update gitignore'
+
+touch .gitignore
+git add .gitignore
+git commit -m 'update gitignore'
 [master a9d9219] update gitignore
  1 file changed, 1 insertion(+)
  create mode 100644 .gitignore
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git status
+
+git status
 Текущая ветка: master
 нечего коммитить, нет изменений в рабочем каталоге
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git rm -r --cached .vscode
+
+git rm -r --cached .vscode
 rm '.vscode/launch.json'
 rm '.vscode/settings.json'
 rm '.vscode/tasks.json'
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git commit -m "Remove ignore directory"
+
+git commit -m "Remove ignore directory"
 [master 1765859] Remove ignore directory
  3 files changed, 101 deletions(-)
  delete mode 100644 .vscode/launch.json
  delete mode 100644 .vscode/settings.json
  delete mode 100644 .vscode/tasks.json
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git push origin master
-Перечисление объектов: 6, готово.
-Подсчет объектов: 100% (6/6), готово.
-При сжатии изменений используется до 4 потоков
-Сжатие объектов: 100% (4/4), готово.
-Запись объектов: 100% (5/5), 467 байтов | 467.00 КиБ/с, готово.
-Всего 5 (изменений 2), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+
+git push origin master
 remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/pvorobei/Stud-Flow.git
    2bb4792..1765859  master -> master
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git rm main.exe
+
+git rm main.exe
 rm 'main.exe'
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ ^C
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git commit -m "ignore main.exe"
-[master dc29762] ignore main.exe
- 1 file changed, 0 insertions(+), 0 deletions(-)
- delete mode 100755 main.exe
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git push origin master
-Перечисление объектов: 3, готово.
-Подсчет объектов: 100% (3/3), готово.
-При сжатии изменений используется до 4 потоков
-Сжатие объектов: 100% (2/2), готово.
-Запись объектов: 100% (2/2), 228 байтов | 228.00 КиБ/с, готово.
-Всего 2 (изменений 1), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+
+git commit -m "ignore main.exe"
+
+git push origin master
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/pvorobei/Stud-Flow.git
    1765859..dc29762  master -> master
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git add .gitignore
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git commit -m 'update gitignore'
+git add .gitignore
+git commit -m 'update gitignore'
 [master eb44b63] update gitignore
  1 file changed, 2 insertions(+), 1 deletion(-)
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git push origin master
-Перечисление объектов: 5, готово.
-Подсчет объектов: 100% (5/5), готово.
-При сжатии изменений используется до 4 потоков
-Сжатие объектов: 100% (2/2), готово.
-Запись объектов: 100% (3/3), 295 байтов | 295.00 КиБ/с, готово.
-Всего 3 (изменений 1), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+
+git push origin master
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/pvorobei/Stud-Flow.git
    dc29762..eb44b63  master -> master
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ ^C
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$
 
-==============================================================
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ ^C
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git revert a9d9219f276c5bb2326748f33cc21caeb057d3c8
-CONFLICT (modify/delete): .gitignore deleted in parent of a9d9219 (update gitignore) and modified in HEAD.  Version HEAD of .gitignore left in tree.
-error: не удалось обратить изменения коммита a9d9219... update gitignore
-подсказка: After resolving the conflicts, mark them with
-подсказка: "git add/rm <pathspec>", then run
-подсказка: "git revert --continue".
-подсказка: You can instead skip this commit with "git revert --skip".
-подсказка: To abort and get back to the state before "git revert",
-подсказка: run "git revert --abort".
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git status
-Текущая ветка: master
-Вы сейчас обращаете изменения коммита a9d9219.
-  (разрешите конфликты, затем запустите «git revert --continue»)
-  (use "git revert --skip" to skip this patch)
-  (используйте «git revert --abort», чтобы отменить операцию обращения изменений коммита)
-
-Не слитые пути:
-  (используйте «git restore --staged <файл>...», чтобы убрать из индекса)
-  (используйте «git add/rm <файл>...», чтобы пометить выбранное разрешение конфликта)
-        удалено ими:    .gitignore
-
-индекс пуст (используйте «git add» и/или «git commit -a»)
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ ^C
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git revert --abort
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git status
+git status
 Текущая ветка: master
 нечего коммитить, нет изменений в рабочем каталоге
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git branch first_update
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git branch
+
+git branch first_update
+git branch
   first_update
 * master
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git checkout -b first_update
-fatal: Ветка с именем «first_update» уже существует.
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git switch first_update
+
+git switch first_update
 Переключились на ветку «first_update»
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git branch
+git branch
 * first_update
   master
-tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ 
+
