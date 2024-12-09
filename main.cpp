@@ -310,7 +310,7 @@ void BDPrintNoPayment(Group *head)
         curentGroup = curentGroup->next;
     }
 }
-
+// Какой-то комметарий
 /*Подсчёт количества конкретных символов в указанной строке*/
 int countChar(string &str, char ch)
 {
