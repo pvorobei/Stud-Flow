@@ -1,123 +1,51 @@
-git config --global user.name "Monty"
-git config --global user.email "p.vorobei2013@gmail.com"
-git init
-подсказка: Using 'master' as the name for the initial branch. This default branch name
-подсказка: is subject to change. To configure the initial branch name to use in all
-подсказка: of your new repositories, which will suppress this warning, call:
-подсказка:
-подсказка:      git config --global init.defaultBranch <name>
-подсказка:
-подсказка: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-подсказка: 'development'. The just-created branch can be renamed via this command:
-подсказка:
-подсказка:      git branch -m <name>
-Инициализирован пустой репозиторий Git в ..project/TASK_Stud_Flow/.git/
-
-git add .
-git status
-Текущая ветка: master
-Еще нет коммитов
-Изменения, которые будут включены в коммит:
-  (используйте «git rm --cached <файл>...», чтобы убрать из индекса)
-        новый файл:    .vscode/launch.json
-        новый файл:    .vscode/settings.json
-        новый файл:    .vscode/tasks.json
-        новый файл:    file.cpp
-        новый файл:    file.h
-        новый файл:    flow.txt
-        новый файл:    group.cpp
-        новый файл:    group.h
-        новый файл:    main.cpp
-        новый файл:    main.exe
-        новый файл:    main.h
-        новый файл:    person.cpp
-        новый файл:    person.h
-
-git commit -m "first commit"
-[master (корневой коммит) 2bb4792] first commit
- 13 files changed, 776 insertions(+)
- create mode 100644 .vscode/launch.json
- create mode 100644 .vscode/settings.json
- create mode 100644 .vscode/tasks.json
- create mode 100644 file.cpp
- create mode 100644 file.h
- create mode 100644 flow.txt
- create mode 100644 group.cpp
- create mode 100644 group.h
- create mode 100644 main.cpp
- create mode 100755 main.exe
- create mode 100644 main.h
- create mode 100644 person.cpp
- create mode 100644 person.h
-
-git remote add origin https://github.com/pvorobei/Stud-Flow.git
-git remote -v
-origin  https://github.com/pvorobei/Stud-Flow.git (fetch)
-origin  https://github.com/pvorobei/Stud-Flow.git (push)
-
-git push origin master
-To https://github.com/pvorobei/Stud-Flow.git
- * [new branch]      master -> master
-
-touch .gitignore
-git add .gitignore
-git commit -m 'update gitignore'
-[master a9d9219] update gitignore
- 1 file changed, 1 insertion(+)
- create mode 100644 .gitignore
-
-git status
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git status 
 Текущая ветка: master
 нечего коммитить, нет изменений в рабочем каталоге
-
-git rm -r --cached .vscode
-rm '.vscode/launch.json'
-rm '.vscode/settings.json'
-rm '.vscode/tasks.json'
-
-git commit -m "Remove ignore directory"
-[master 1765859] Remove ignore directory
- 3 files changed, 101 deletions(-)
- delete mode 100644 .vscode/launch.json
- delete mode 100644 .vscode/settings.json
- delete mode 100644 .vscode/tasks.json
-
-git push origin master
-remote: Resolving deltas: 100% (2/2), completed with 1 local object.
-To https://github.com/pvorobei/Stud-Flow.git
-   2bb4792..1765859  master -> master
-
-git rm main.exe
-rm 'main.exe'
-
-git commit -m "ignore main.exe"
-
-git push origin master
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/pvorobei/Stud-Flow.git
-   1765859..dc29762  master -> master
-git add .gitignore
-git commit -m 'update gitignore'
-[master eb44b63] update gitignore
- 1 file changed, 2 insertions(+), 1 deletion(-)
-
-git push origin master
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/pvorobei/Stud-Flow.git
-   dc29762..eb44b63  master -> master
-
-git status
-Текущая ветка: master
-нечего коммитить, нет изменений в рабочем каталоге
-
-git branch first_update
-git branch
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git branch
+  add_media
+  bug_fix
   first_update
 * master
-
-git switch first_update
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git switch first_update
 Переключились на ветку «first_update»
-git branch
-* first_update
-  master
-
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git add .
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git commit -m "ed flow_txt"
+[first_update f2a312f] ed flow_txt
+ 1 file changed, 19 insertions(+), 19 deletions(-)
+ rewrite flow.txt (98%)
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git push origin first_update
+Перечисление объектов: 5, готово.
+Подсчет объектов: 100% (5/5), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (3/3), 449 байтов | 449.00 КиБ/с, готово.
+Всего 3 (изменений 1), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pvorobei/Stud-Flow.git
+   95f2374..f2a312f  first_update -> first_update
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git switch bug_fix
+Переключились на ветку «bug_fix»
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ gitt add .
+Команда «gitt» не найдена. Возможно, вы имели в виду:
+  команда 'gitu' из snap-пакета gitu (v0.27.0)
+  команда 'gitit' из deb-пакета gitit (0.13.0.0+dfsg-2build5)
+  команда 'gitk' из deb-пакета gitk (1:2.34.1-1ubuntu1.11)
+  команда 'gist' из deb-пакета yorick (2.2.04+dfsg1-12)
+  команда 'git' из deb-пакета git (1:2.34.1-1ubuntu1.11)
+  команда 'gitg' из deb-пакета gitg (41-2)
+  команда 'gita' из deb-пакета gita (0.16.2-1)
+См. 'snap info <имя_snap-пакета>', чтобы просмотреть дополнительные версии.
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git add .
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git commit -m "comment_main_cpp"
+[bug_fix 9de398b] comment_main_cpp
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+tymon@tymon-H110M-S2PV:~/project/TASK_Stud_Flow$ git push origin bug_fix
+Перечисление объектов: 5, готово.
+Подсчет объектов: 100% (5/5), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (3/3), 328 байтов | 328.00 КиБ/с, готово.
+Всего 3 (изменений 2), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/pvorobei/Stud-Flow.git
+   d4c1015..9de398b  bug_fix -> bug_fix
